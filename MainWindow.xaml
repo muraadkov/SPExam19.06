@@ -1,0 +1,27 @@
+﻿<Window x:Class="SPExam19._06.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SPExam19._06"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+    TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontFamily="Comic Sans MS"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox Name="number" HorizontalAlignment="Left" Height="29" Margin="116,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="78"/>
+        <Button Name="StartToFillArray" Click="StartToFillArray_Click" Content="Пуск" HorizontalAlignment="Left" Margin="163,82,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label Content="Введите число:" HorizontalAlignment="Left" Margin="10,34,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.524,0.479" Width="101"/>
+        <GridSplitter HorizontalAlignment="Left" Height="417" Margin="364,2,0,0" VerticalAlignment="Top" Width="5" Background="#FF9C9C9C"/>
+        <TextBox Name="login" HorizontalAlignment="Left" Height="23" Margin="387,34,0,0" TextWrapping="Wrap" Text="Login" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="email" HorizontalAlignment="Left" Height="23" Margin="387,83,0,0" TextWrapping="Wrap" Text="Email" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="password" HorizontalAlignment="Left" Height="23" Margin="387,225,0,0" TextWrapping="Wrap" Text="Password" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="doublePassword" HorizontalAlignment="Left" Height="23" Margin="387,179,0,0" TextWrapping="Wrap" Text="DoublePassword" VerticalAlignment="Top" Width="120"/>
+        <TextBox Name="mobileNumber" HorizontalAlignment="Left" Height="23" Margin="387,130,0,0" TextWrapping="Wrap" Text="MobileNumber" VerticalAlignment="Top" Width="120"/>
+        <Button Click="CreateEssense_Click"  Name="CreateEssense" Content="Создать" HorizontalAlignment="Left" Margin="608,320,0,0" VerticalAlignment="Top" Width="99"/>
+
+    </Grid>
+</Window>
